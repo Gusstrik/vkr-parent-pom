@@ -16,7 +16,7 @@
         <spring.boot.version>2.6.7</spring.boot.version>
         <lombok.version>1.18.22</lombok.version>
         <package.type>jar</package.type>
-        <keycloak.admin.version>13.0.1</keycloak.admin.version>
+        <keycloak.version>13.0.1</keycloak.version>
     </properties>
 
     <dependencyManagement>
@@ -57,8 +57,14 @@
             <dependency>
                 <groupId>org.keycloak</groupId>
                 <artifactId>keycloak-admin-client</artifactId>
-                <version>${keycloak.admin.version}</version>
+                <version>${keycloak.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.keycloak</groupId>
+                <artifactId>keycloak-authz-client</artifactId>
+                <version>${keycloak.version}</version>
+            </dependency>
+
 
 
             <dependency>
