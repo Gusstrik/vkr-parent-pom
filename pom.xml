@@ -19,6 +19,8 @@
         <keycloak.version>13.0.1</keycloak.version>
         <vkr.common.lib.version>1.0-SNAPSHOT</vkr.common.lib.version>
         <springdoc.version>1.6.8</springdoc.version>
+        <liquibase.version>4.10.0</liquibase.version>
+        <postgres.version>42.3.5</postgres.version>
     </properties>
 
     <dependencyManagement>
@@ -88,6 +90,18 @@
                 <artifactId>springdoc-openapi-ui</artifactId>
                 <version>${springdoc.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.liquibase</groupId>
+                <artifactId>liquibase-core</artifactId>
+                <version>${liquibase.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>${postgres.version}</version>
+            </dependency>
+
+
         </dependencies>
     </dependencyManagement>
 
